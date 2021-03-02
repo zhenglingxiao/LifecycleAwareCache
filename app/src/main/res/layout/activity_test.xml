@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewCache"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/darker_gray"
+        android:padding="8dp"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/buttonSetCache"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewCache"
+        android:layout_marginStart="8dp"
+        android:text="设置缓存" />
+
+    <Button
+        android:id="@+id/buttonStartActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewCache"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@id/buttonSetCache"
+        android:text="跳转到 B Activity" />
+</RelativeLayout>
