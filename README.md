@@ -10,7 +10,7 @@ The scopes of the cache.
 The rules of the cache.
 * Write rules: Caches in different scopes are independent. In the same scope, cache with the same key can be written repeatedly.
 * Read rules: The cache cannot be read across different scopes.
-* Recycling rules: Each scope manages its own caches, and a cache is recycled by the component that created it.
+* Recycling rules: Scope manages its own caches, and a cache is recycled by the component that created it.
 
 For example: ActivityA set a cache in the Activity scope. After jumping to ActivityB, ActivityB can also read and write this cache.
 When ActivityB is destroyed, this cache will not be reclaimed. When ActivityA is destroyed, this cache will be recycled.
