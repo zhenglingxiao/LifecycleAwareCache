@@ -1,6 +1,6 @@
 ### Introduction
 
-Make shared memory cache can be automatically recycled by the lifecycle callback.
+Shared memory cache of Application, Activities and Fragments, which can be automatically recycled by the lifecycle callback.
 
 The scopes of the cache.
 * Application: The lifecycle of the cache is the same as the application.
